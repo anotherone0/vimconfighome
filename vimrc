@@ -1,12 +1,11 @@
 
-
 execute pathogen#infect()
 
 filetype plugin indent on
 
 set autoindent
 set smartindent
-set ic
+set ignorecase
 
 set nowrap
 
@@ -37,5 +36,7 @@ vmap <Leader>P "+P
 
 nmap gr gT
 
-colorscheme desert
+nmap <leader>u :vsc File.TfsUndoCheckout<CR>
+nmap <leader>w :vsc File.CloseAllButThis<CR>
+
 colorscheme slate
