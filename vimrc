@@ -6,6 +6,8 @@ filetype plugin indent on
 set autoindent
 set smartindent
 set ignorecase
+set smartcase
+set ruler
 
 set nowrap
 
