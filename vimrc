@@ -1,5 +1,3 @@
-
-
 execute pathogen#infect()
 
 filetype plugin indent on
@@ -39,5 +37,4 @@ vmap <Leader>P "+P
 
 nmap gr gT
 
-colorscheme desert
 colorscheme slate
