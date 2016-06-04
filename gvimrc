@@ -1,6 +1,8 @@
 "set background=dark
 "colorscheme solarized
-colorscheme blues 
+colorscheme gotham 
+
+set guifont=Consolas:h14:cANSI
 
 au GUIEnter * simalt ~x
 "set lines=999

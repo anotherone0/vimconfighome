@@ -48,3 +48,4 @@ nmap gr gT
 colorscheme slate
 
 set noerrorbells
+
