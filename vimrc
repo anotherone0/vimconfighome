@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+||||||| merged common ancestors
+
+
+=======
+
+>>>>>>> vsvim
 execute pathogen#infect()
 
 filetype plugin indent on
@@ -7,6 +14,14 @@ set smartindent
 set ignorecase
 set smartcase
 set ruler
+
+"make tabs 4 spaces
+set tabstop=8
+set softtabstop=0
+set expandtab
+set shiftwidth=4
+set smarttab
+"end
 
 set nowrap
 
