@@ -1,6 +1,5 @@
-syntax enable
-set background=dark
-colorscheme solarized
+"set background=dark
+"colorscheme solarized
 colorscheme blues 
 
 au GUIEnter * simalt ~x

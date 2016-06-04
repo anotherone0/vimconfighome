@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-||||||| merged common ancestors
-
-
-=======
-
->>>>>>> vsvim
 execute pathogen#infect()
 
 filetype plugin indent on
@@ -26,7 +19,7 @@ set smarttab
 set nowrap
 
 
-syntax on
+syntax enable
 set nobackup
 set noswapfile
 
@@ -53,3 +46,5 @@ vmap <Leader>P "+P
 nmap gr gT
 
 colorscheme slate
+
+set noerrorbells
