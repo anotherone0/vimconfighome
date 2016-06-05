@@ -27,6 +27,7 @@ let mapleader = "\<Space>"
 nnoremap <leader>d :NERDTreeToggle<CR>
 nnoremap <leader>f :NERDTreeFind<CR>
 nnoremap <C-h> <C-w>h
+nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
@@ -55,4 +56,8 @@ let g:go_doc_keywordprg_enabled = 0 "disable k so i can use my old mapping
 
 nmap <leader>u :vsc File.TfsUndoCheckout<CR>
 nmap <leader>w :vsc File.CloseAllButThis<CR>
+
+set backupdir=~/.vim/backup//,.
+set dir=~/.vim/swap//,.
+set undodir=~/.vim/undo//,.
 
