@@ -48,8 +48,7 @@ nmap gr gT
 
 colorscheme slate
 
-set visualbell
-set noerrorbells
+set noeb vb t_vb=
 
 "vimgo
 let g:go_doc_keywordprg_enabled = 0 "disable k so i can use my old mapping

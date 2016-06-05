@@ -3,7 +3,10 @@
 colorscheme gotham 
 
 set encoding=utf-8
-"
+
+"no errorbells
+set vb t_vb=
+
 "airline
 AirlineTheme luna
 set laststatus=2
