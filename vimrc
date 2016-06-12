@@ -9,11 +9,11 @@ set smartcase
 set ruler
 
 "make tabs 4 spaces
-set tabstop=8
-set softtabstop=0
-set expandtab
-set shiftwidth=4
-set smarttab
+"set tabstop=8
+"set softtabstop=0
+"set expandtab
+"set shiftwidth=4
+"set smarttab
 "end
 
 set nowrap
@@ -24,7 +24,7 @@ set nobackup
 set noswapfile
 
 let mapleader = "\<Space>"
-nnoremap <leader>d :NERDTreeToggle<CR>
+nnoremap <leader>d :Explore<CR>
 nnoremap <leader>f :NERDTreeFind<CR>
 nnoremap <C-h> <C-w>h
 nnoremap <C-h> <C-w>h
