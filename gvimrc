@@ -1,6 +1,9 @@
 "set background=dark
-"colorscheme solarized
 colorscheme gotham 
+AirlineTheme luna
+"night
+colorscheme greenvision
+AirlineTheme base16_atelierseaside 
 
 set encoding=utf-8
 
@@ -8,7 +11,6 @@ set encoding=utf-8
 set vb t_vb=
 
 "airline
-AirlineTheme luna
 set laststatus=2
 set guifont=Inconsolata\ for\ Powerline:h14
 let g:airline_powerline_fonts = 1

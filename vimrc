@@ -9,11 +9,11 @@ set smartcase
 set ruler
 
 "make tabs 4 spaces
-"set tabstop=8
-"set softtabstop=0
-"set expandtab
-"set shiftwidth=4
-"set smarttab
+set tabstop=8
+set softtabstop=0
+set expandtab
+set shiftwidth=4
+set smarttab
 "end
 
 set nowrap
@@ -24,16 +24,13 @@ set nobackup
 set noswapfile
 
 let mapleader = "\<Space>"
-nnoremap <leader>d :Explore<CR>
+nnoremap <leader>d :NERDTreeToggle<CR>
 nnoremap <leader>f :NERDTreeFind<CR>
 nnoremap <C-h> <C-w>h
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
-
-nnoremap [q :cprev<CR>
-nnoremap ]q :cnext<CR>
 
 map Y y$
 map K f r<CR>
@@ -50,13 +47,27 @@ colorscheme slate
 
 set noeb vb t_vb=
 
-"vimgo
-let g:go_doc_keywordprg_enabled = 0 "disable k so i can use my old mapping
-
 nmap <leader>u :vsc File.TfsUndoCheckout<CR>
 nmap <leader>w :vsc File.CloseAllButThis<CR>
 
 set backupdir=~/.vim/backup//,.
 set dir=~/.vim/swap//,.
 set undodir=~/.vim/undo//,.
+
+function! DoBuildBatchFile()
+    set makeprg=build.bat
+    set errorformat=%f(%l):\ %m
+    silent make
+    cw
+    echo 'Build Complete'
+endfunction
+
+nnoremap <Leader>m :call DoBuildBatchFile()<CR>
+
+
+" language specific stuff
+" =======================
+
+"vimgo
+let g:go_doc_keywordprg_enabled = 0 "disable k so i can use my old mapping
 
