@@ -56,13 +56,15 @@ set undodir=~/.vim/undo//,.
 
 function! DoBuildBatchFile()
     set makeprg=build.bat
-    set errorformat=%f(%l):\ %m
+    set errorformat=%f(%l):\ %m "C++ efmt
+    " set errorformat=%f(%l\\\,%c):\ %m "c# efmt
     silent make
     cw
     echo 'Build Complete'
 endfunction
 
 nnoremap <Leader>m :call DoBuildBatchFile()<CR>
+nnoremap <Leader>r :!run.bat<CR>
 
 
 " language specific stuff

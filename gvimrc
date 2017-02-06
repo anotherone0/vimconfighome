@@ -1,8 +1,19 @@
 "set background=dark
-colorscheme gotham 
+" colorscheme gotham 
+" colorscheme ubaryd
+" colorscheme vendetta
+" colorscheme slate
+" colorscheme blues
+" colorscheme autumn
+" colorscheme predawn
+" colorscheme solarized
+" colorscheme spurs_away
+colorscheme sunburst
+" colorscheme blues
+" colorscheme koehler
+" colorscheme greenvision
+
 AirlineTheme luna
-"night
-colorscheme greenvision
 AirlineTheme base16_atelierseaside 
 
 set encoding=utf-8
@@ -13,6 +24,7 @@ set vb t_vb=
 "airline
 set laststatus=2
 set guifont=Inconsolata\ for\ Powerline:h14
+
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 "
@@ -27,9 +39,6 @@ let g:airline_symbols.linenr = ''
 
 "bufferline
 let g:bufferline_echo = 0
-
-"set guifont=Consolas:h14:cANSI
-"set guifont=Cousine\ For\ Powerline:h14
 
 " au GUIEnter * simalt ~x "times without dll
 "set lines=999
