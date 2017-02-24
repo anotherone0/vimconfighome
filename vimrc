@@ -9,7 +9,7 @@ set smartcase
 set ruler
 
 "make tabs 4 spaces
-set tabstop=8
+set tabstop=4
 set softtabstop=0
 set expandtab
 set shiftwidth=4
@@ -17,7 +17,6 @@ set smarttab
 "end
 
 set nowrap
-
 
 syntax enable
 set nobackup
@@ -41,14 +40,19 @@ nmap <Leader>P "+P
 vmap <Leader>p "+p
 vmap <Leader>P "+P
 
+nmap S :%s//g<LEFT><LEFT>
+vmap S :s//g<LEFT><LEFT>
+
 nmap gr gT
 
 colorscheme slate
 
 set noeb vb t_vb=
 
-nmap <leader>u :vsc File.TfsUndoCheckout<CR>
-nmap <leader>w :vsc File.CloseAllButThis<CR>
+"visual studio
+" nmap <leader>u :vsc File.TfsUndoCheckout<CR>
+" nmap <leader>w :vsc File.CloseAllButThis<CR>
+
 
 set backupdir=~/.vim/backup//,.
 set dir=~/.vim/swap//,.

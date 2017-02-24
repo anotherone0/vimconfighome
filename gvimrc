@@ -1,6 +1,6 @@
 "set background=dark
 " colorscheme gotham 
-" colorscheme ubaryd
+colorscheme ubaryd
 " colorscheme vendetta
 " colorscheme slate
 " colorscheme blues
@@ -8,22 +8,25 @@
 " colorscheme predawn
 " colorscheme solarized
 " colorscheme spurs_away
-colorscheme sunburst
+" colorscheme sunburst
 " colorscheme blues
 " colorscheme koehler
 " colorscheme greenvision
 
-AirlineTheme luna
-AirlineTheme base16_atelierseaside 
+" AirlineTheme luna
+" AirlineTheme base16_atelierseaside "green and gray mostly
 
 set encoding=utf-8
 
 "no errorbells
 set vb t_vb=
+"
+set cursorline
+set colorcolumn=80
 
 "airline
 set laststatus=2
-set guifont=Inconsolata\ for\ Powerline:h14
+set guifont=Inconsolata\ for\ Powerline:h12
 
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
