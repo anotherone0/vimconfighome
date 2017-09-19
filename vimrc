@@ -90,8 +90,8 @@ nnoremap <Leader>t :!test.bat<CR>
 
 " angular
 let g:ctrlp_custom_ignore = { 
-            \'dir':  '\v[\/]\(\.git|\.hg|\.svn|node_modules)$',
-            \'file': '\v\.(exe|obj|dll|lib|tlog|class|map|js)$',
+            \'dir':  '\v[\/](\.git|\.hg|\.svn|node_modules)$',
+            \'file': '\v\.(exe|obj|dll|lib|tlog|class|map|js)$'
 \ }
 
 let g:ctrlp_working_path_mode = 'a'
