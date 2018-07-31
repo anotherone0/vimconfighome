@@ -63,18 +63,20 @@ set undodir=~/.vim/undo//,.
 
 " general build for msbuild
 " @"C:\Program Files (x86)\MSBuild\14.0\Bin\MsBuild.exe" /nologo /v:q /property:GenerateFullPaths=true
+" /p:Configuration=Debug /p:Platform="Any CPU"
 
 " C:\Program Files (x86)\MSBuild\12.0\bin\Microsoft.Common.CurrentVersion.targets(1696,5): warning MSB3088: Could not read state file "obj\Debug\SatelliteInfoProvider.csprojResolveAssemblyReference.cache". Unable to find assembly 'Microsoft.Build.Tasks.Core, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'. [C:\Users\fraccat\Desktop\softspace\wpc\Apps\CCC\SatelliteInfoProvider\SatelliteInfoProvider.csproj]
 " c:\Users\fraccat\Desktop\softspace\wpc\Apps\CCC\SystemPanelWeb\Controllers\AlarmController.cs(12,7): error CS1041: Identifier expected; 'static' is a keyword [C:\Users\fraccat\Desktop\softspace\wpc\Apps\CCC\SystemPanelWeb\SystemPanelWeb.csproj]
 
+
 function! DoBuildBatchFile()
     set makeprg=build.bat
     " set errorformat=%f(%l):\ %m "C++ efmt
-    " set errorformat=%f(%l\\\,%c):\ %m "c# efmt
-    set errorformat=%f(%l\\\,%c):\ %#%t%[A-z]%#\ %m "c#vs efmt
+    set errorformat=%f(%l\\\,%c):\ %m "c# efmt
+    " set errorformat=%f(%l\\\,%c):\ %#%t%[A-z]%#\ %m "c#vs efmt
     silent make
     cw
-    " call feedkeys("\<C-w>L")
+    call feedkeys("\<C-w>J")
     echo 'Build Complete'
 endfunction
 
